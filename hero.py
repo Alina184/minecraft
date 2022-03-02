@@ -121,11 +121,11 @@ class Hero():
         else:
             return (0, -1)
 
-    def forward(self):
+    def back(self):
         angle =(self.hero.getH()) % 360
         self.move_to(angle)
 
-    def back(self):
+    def forward(self):
         angle = (self.hero.getH()+180) % 360
         self.move_to(angle)
     
